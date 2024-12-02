@@ -1,0 +1,61 @@
+cat .config/rofi/config.rasi
+configuration {
+  display-drun: "run";
+  display-window: "windows";
+  drun-display-format: "{icon} {name}";
+  modi: "window,drun,calc";
+  font: "Noto Sans Mono Regular 12";
+  show-icons: false;
+  icon-theme: "Papirus";
+}
+
+@theme "/dev/null"
+
+* {
+    /* Theme settings */
+    highlight: bold italic;
+    scrollbar: true;
+
+    /* Gruvbox light colors */
+    gruvbox-light-bg0:          #282A36;
+    gruvbox-light-bg0-soft:     #333545;
+    gruvbox-light-bg2:          #75D7EC;
+    gruvbox-light-fg0:          #282828;
+    gruvbox-light-fg1:          #F8F8F2;
+    gruvbox-light-gray:         #9B6BDF;
+    gruvbox-light-red-dark:     #9d0006;
+    gruvbox-light-red-light:    #cc241d;
+    gruvbox-light-yellow-dark:  #b57614;
+    gruvbox-light-yellow-light: #d79921;
+
+    /* Theme colors */
+    background:                  @gruvbox-light-bg0;
+    background-color:            @background;
+    foreground:                  @gruvbox-light-fg1;
+    border-color:                @gruvbox-light-gray;
+    separatorcolor:              #75D7EC;
+    scrollbar-handle:            #75D7EC;
+
+    normal-background:           @background;
+    normal-foreground:           @foreground;
+    alternate-normal-background: @gruvbox-light-bg0-soft;
+    alternate-normal-foreground: @foreground;
+    selected-normal-background:  @gruvbox-light-bg2;
+    selected-normal-foreground:  @gruvbox-light-fg0;
+
+    active-background:           @gruvbox-light-yellow-dark;
+    active-foreground:           @background;
+    alternate-active-background: @active-background;
+    alternate-active-foreground: @active-foreground;
+    selected-active-background:  @gruvbox-light-yellow-light;
+    selected-active-foreground:  @active-foreground;
+
+    urgent-background:           @gruvbox-light-red-dark;
+    urgent-foreground:           @background;
+    alternate-urgent-background: @urgent-background;
+    alternate-urgent-foreground: @urgent-foreground;
+    selected-urgent-background:  @gruvbox-light-red-light;
+    selected-urgent-foreground:  @urgent-foreground;
+}
+
+@import "gruvbox-common.rasi"
