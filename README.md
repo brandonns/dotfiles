@@ -1,8 +1,8 @@
 "current" customized stuff running on an RPI-CM4 setup
 
-
 <img src="https://github.com/user-attachments/assets/374f5721-d2db-41a8-972f-5f5eacf75144" width="420">
 
+---
 *desktop + rofi*
 ![_002](https://github.com/user-attachments/assets/6418444f-1a92-4435-a754-65a302da5972 "i3 + rofi")
 
